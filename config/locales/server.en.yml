@@ -296,11 +296,18 @@ en:
       doge: DOGE
       pts: PTS
       ltc: LTC
+      eth: ETH
+      usd: USD
   currency:
     satoshi:
       key: BTC
       code: BTC
       name: Bitcoin
+      format: '0,0.0000'
+    ethereum:
+      key: ETH
+      code: ETH
+      name: Ethereum
       format: '0,0.0000'
     bitsharesx:
       key: BTS
@@ -311,6 +318,11 @@ en:
       key: CNY
       code: CNY
       name: Chinese Yuan
+      format: '0,0.00'
+    dollar:
+      key: USD
+      code: USD
+      name: Dollar
       format: '0,0.00'
     dogecoin:
       key: DOG
