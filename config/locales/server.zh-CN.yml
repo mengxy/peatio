@@ -291,12 +291,24 @@ zh-CN:
       doge: DOGE
       pts: PTS
       ltc: LTC
+      eth: ETH
+      usd: USD
   currency:
     satoshi:
       key: BTC
       code: BTC
       name: 比特币
       format: '0,0.0000'
+    ethereum:
+      key: ETH
+      code: ETH
+      name: 以太币
+      format: '0,0.0000'
+    dollar:
+      key: USD
+      code: USD
+      name: 美元
+      format: '0,0.00'
     bitsharesx:
       key: BTS
       code: BTSX

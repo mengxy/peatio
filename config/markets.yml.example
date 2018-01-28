@@ -8,3 +8,33 @@
   ask: {fee: 0, currency: btc, fixed: 4}
   sort_order: 1
   #visible: false     # default to true
+- id: btcusd
+  code: 4
+  #name: BTC/USD      # default name
+  base_unit: btc
+  quote_unit: usd
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: usd, fixed: 2}
+  ask: {fee: 0, currency: btc, fixed: 4}
+  sort_order: 2
+  #visible: false     # default to true
+- id: ethusd
+  code: 5
+  #name: ETH/USD      # default name
+  base_unit: eth
+  quote_unit: usd
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: usd, fixed: 2}
+  ask: {fee: 0, currency: eth, fixed: 4}
+  sort_order: 3
+  #visible: false     # default to true
+- id: ethbtc
+  code: 6
+  #name: ETH/BTC      # default name
+  base_unit: eth
+  quote_unit: btc
+  #price_group_fixed: 1 # aggregate price levels in orderbook
+  bid: {fee: 0, currency: eth, fixed: 2}
+  ask: {fee: 0, currency: btc, fixed: 4}
+  sort_order: 4
+  #visible: false     # default to true
