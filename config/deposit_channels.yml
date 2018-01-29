@@ -1,32 +1,32 @@
+- id: 100
+  key: renminbi
+  currency: cny
+  sort_order: 2
+  bank_accounts:
+    -
+      bank: 'CMB'
+      branch: 'CMB BEIJING'
+      holder: 'PAOLU EX'
+      account: '1'
 - id: 200
+  key: dollar
+  currency: usd
+  sort_order: 4
+  bank_accounts:
+    -
+      bank: 'CMB'
+      branch: 'CMB BEIJING'
+      holder: 'PAOLU EX'
+      account: '3'
+- id: 300
   key: satoshi
   currency: btc
   sort_order: 1
   min_confirm: 1
   max_confirm: 3
 - id: 400
-  key: bank
-  currency: cny
-  sort_order: 2
-  bank_accounts:
-    -
-      bank: 'Your Bank Name'
-      branch: 'Your Bank Branch'
-      holder: 'Your Account Holder'
-      account: 'Your Account Number'
-- id: 600
   key: ethereum
   currency: eth
   sort_order: 3
   min_confirm: 1
   max_confirm: 3
-- id: 800
-  key: bank
-  currency: usd
-  sort_order: 4
-  bank_accounts:
-    -
-      bank: 'Your Bank Name'
-      branch: 'Your Bank Branch'
-      holder: 'Your Account Holder'
-      account: 'Your Account Number'

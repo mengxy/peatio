@@ -34,7 +34,7 @@
   base_unit: eth
   quote_unit: btc
   #price_group_fixed: 1 # aggregate price levels in orderbook
-  bid: {fee: 0, currency: eth, fixed: 2}
-  ask: {fee: 0, currency: btc, fixed: 4}
+  bid: {fee: 0, currency: btc, fixed: 2}
+  ask: {fee: 0, currency: eth, fixed: 4}
   sort_order: 4
   #visible: false     # default to true
