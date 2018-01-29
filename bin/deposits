@@ -1,0 +1,16 @@
+#!/bin/bash 
+
+rake emu:deposits email='foo@peatio.dev' account='1'
+rake emu:deposits email='foo@peatio.dev' account='2'
+rake emu:deposits email='foo@peatio.dev' account='3'
+rake emu:deposits email='foo@peatio.dev' account='4'
+
+rake emu:deposits email='bar@peatio.dev' account='1'
+rake emu:deposits email='bar@peatio.dev' account='2'
+rake emu:deposits email='bar@peatio.dev' account='3'
+rake emu:deposits email='bar@peatio.dev' account='4'
+
+rake emu:deposits email='admin@peatio.dev' account='1'
+rake emu:deposits email='admin@peatio.dev' account='2'
+rake emu:deposits email='admin@peatio.dev' account='3'
+rake emu:deposits email='admin@peatio.dev' account='4'
