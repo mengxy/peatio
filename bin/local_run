@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# start all daemons
+echo "bundle exec rake daemons:start"
+bundle exec rake daemons:start
+
+# start server
+echo "bundle exec rails server"
+bundle exec rails server
