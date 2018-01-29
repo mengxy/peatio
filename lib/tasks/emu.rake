@@ -75,6 +75,8 @@ namespace :emu do
       confirmations = 100
       receive_at = Time.now
       channel = DepositChannel.find_by_key a.currency_obj.key
+      fund_uid = "1"
+      fund_extra = "1"
       #pt_class = "PaymentTransaction::#{channel.currency.camelize}".constantize
 
       ActiveRecord::Base.transaction do
@@ -87,16 +89,19 @@ namespace :emu do
           receive_at: receive_at,
           currency: channel.currency
         )
+        puts tx.inspect
 
         deposit = channel.kls.create!(
           payment_transaction_id: tx.id,
           txid: tx.txid,
           txout: tx.txout,
           amount: tx.amount,
-          member: tx.member,
-          account: tx.account,
+          member: m,
+          account: a,
           currency: tx.currency,
-          confirmations: tx.confirmations
+          confirmations: tx.confirmations,
+          fund_uid: fund_uid,
+          fund_extra: fund_extra
         )
 
         deposit.submit!
