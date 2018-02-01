@@ -28,6 +28,7 @@ module APIv2
         from = Time.at k.last[0]
         trades = Trade.with_currency(params[:market])
           .where('created_at >= ? AND id < ?', from, params[:trade_id])
+          .limit(200)
           .map(&:for_global)
 
         {k: k, trades: trades}
