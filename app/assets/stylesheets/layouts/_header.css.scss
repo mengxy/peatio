@@ -9,7 +9,12 @@ header {
       margin-top: -1px;
   }
 
-  .navbar-brand { width: $brand-width; }
+  .navbar-brand { 
+    width: $brand-width; 
+    color: rgb(255, 253, 56)!important;
+    font-style: italic;
+    font-weight: bolder;
+  }
 
   .dropdown-menu li:hover .sub-menu {
       visibility: visible;
