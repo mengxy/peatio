@@ -1,7 +1,7 @@
 module Worker
   class MarketTicker
 
-    FRESH_TRADES = 80
+    FRESH_TRADES = 40
 
     def initialize
       @tickers = {}

@@ -22,7 +22,7 @@ module Private
       @order_bid = OrderBid.new ord_type: 'limit'
       @order_ask = OrderAsk.new ord_type: 'limit'
 
-      set_member_data if current_user
+      #set_member_data if current_user
       gon.jbuilder
     end
 

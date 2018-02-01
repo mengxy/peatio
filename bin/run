@@ -5,5 +5,5 @@ echo "bundle exec rake daemons:start"
 bundle exec rake daemons:start
 
 # start server
-echo "bundle exec unicorn -p 3000 -E production  -c config/unicron.rb -D"
-bundle exec unicorn -p 3000 -E production  -c config/unicron.rb -D
+echo "bundle exec unicorn -p 3000 -E production  -c config/unicorn.rb -D"
+bundle exec unicorn -p 3000 -E production  -c config/unicorn.rb -D
