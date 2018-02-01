@@ -102,7 +102,10 @@ footer {
   box-sizing: 'border-box';
   padding-top: 20px;
   background-color: $footer-bg;
-  border-top: 1px solid $footer-border;
+
+  a, a:hover, a:focus {
+    color: #ddd;
+  }
 }
 
 /* ticker
