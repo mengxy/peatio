@@ -259,6 +259,7 @@ header {
 .charts {
   position: relative;
   background-color: white;
+  padding: 12px;
 }
 
 #candlestick > .mask {
@@ -531,6 +532,7 @@ header {
 #order_book {
   min-height: $order-book-height;
   margin-bottom: 10px;
+  padding: 12px;
   // top: $gutter; right: $gutter;
 
   .panel-body-content {
@@ -568,13 +570,13 @@ header {
 #range_switch {
   position: absolute;
   top: 13px; 
-  left: 0;
+  left: 12px;
   li { padding-left: 10px; padding-right: 0; }
 }
 #indicator_switch_wrapper {
   top: 33px; 
   position: absolute;
-  left: 0;
+  left: 12px;
   li { padding-left: 10px; padding-right: 0; }
 }
 
@@ -643,6 +645,7 @@ header {
   .panel {
     height: $market-trades-height;
     min-height: $market-trades-height;
+    padding: 12px;
   }
   .panel-body-content {
     min-height: $market-trades-height - $panel_table_header_high;
@@ -678,6 +681,9 @@ header {
   // position: absolute;
   // top: $gutter; left: $gutter;
   z-index: 999;
+  .panel {
+    padding: 12px;
+  }
 
   .panel-body-content {
     height: $market-list-height - $panel_table_header_high;
@@ -845,7 +851,7 @@ header {
 /* order-book trades my-orders table
 ---------------------------------------------------*/
 .col-left { padding-right: 12px; }
-.panel-body-head { border-bottom: 1px solid #333; }
+.panel-body-head { border-bottom: 1px solid #f2f2f2; }
 
 #ticker, #order_book, #market_trades, #my_orders, #market_list {
   table {
