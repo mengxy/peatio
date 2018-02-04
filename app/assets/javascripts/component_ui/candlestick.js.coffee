@@ -138,7 +138,7 @@ INDICATOR = {MA: false, EMA: false}
             @unmask()
         animation: true
         marginTop: 95
-        backgroundColor: 'rgba(0,0,0, 0.0)'
+        backgroundColor: '#ffffff'
 
       credits:
         enabled: false

@@ -1,10 +1,10 @@
 #market_list_wrapper.has-right-dropdown
-  - if @market_groups.size > 1
-    .dropdown-wrapper
-      ul.dropdown-menu
-        li: a.active data-name='all' href="javascript:;" = t('.all_html')
-        - @market_groups.each do |name|
-          li: a data-name=name href="javascript:;" = t(".#{name}_html")
+  / - if @market_groups.size > 1
+  /   .dropdown-wrapper
+  /     ul.dropdown-menu
+  /       li: a.active data-name='all' href="javascript:;" = t('.all_html')
+  /       - @market_groups.each do |name|
+  /         li: a data-name=name href="javascript:;" = t(".#{name}_html")
   #market_list
     .panel.panel-default
       .panel-body.panel-body-head
