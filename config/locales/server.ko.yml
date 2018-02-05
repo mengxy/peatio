@@ -1622,9 +1622,9 @@ ko:
     application:
       close: 닫기
     meta:
-      page_title: Peatio - The Opensource Cryptocurrency Exchange
-      page_description: Peatio- The Opensource Cryptocurrency Exchange
-      page_keywords: Peatio,오펀소스, 거래소 , 암호화 화폐
+      page_title: ALLINCOIN
+      page_description: ALLINCOIN
+      page_keywords: Exchange,Cryptocurrency
   members:
     edit:
       name: 자산을 안전하게 관리하기위해 이름과 개인정보를 정확히 입력하세요.

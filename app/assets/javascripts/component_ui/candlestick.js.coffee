@@ -219,7 +219,7 @@ INDICATOR = {MA: false, EMA: false}
         enabled: false
 
       navigator:
-        maskFill: 'rgba(32, 32, 32, 0.6)'
+        maskFill: 'rgba(255,255,255,0)'
         outlineColor: '#333'
         outlineWidth: 1
         xAxis:

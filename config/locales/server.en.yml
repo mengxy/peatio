@@ -1501,9 +1501,9 @@ en:
   gon:
     ask: Ask
     bid: Bid
-    brand: Peatio Exchange
+    brand: ALLINCOIN
     notification:
-      title: Peatio Exchange
+      title: ALLINCOIN
       enabled: Notification enabled.
       new_trade: "%{kind} order#%{id} executed at %{price} %{quote_unit} for %{volume} %{base_unit}。"
   back: Back
@@ -1710,9 +1710,9 @@ en:
     application:
       close: Close
     meta:
-      page_title: Peatio - The Opensource Cryptocurrency Exchange
-      page_description: Peatio - The Opensource Cryptocurrency Exchange
-      page_keywords: Peatio,Opensource,Exchange,Cryptocurrency
+      page_title: ALLINCOIN
+      page_description: ALLINCOIN
+      page_keywords: Exchange,Cryptocurrency
   members:
     edit:
       name: Please fill out the application.

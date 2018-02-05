@@ -32,6 +32,11 @@ a {
   font-size: 13px;
 }
 
+a:hover, a:focus {
+  color: #333;
+  text-decoration: none;
+}
+
 .input-group-addon {
   font-size: 13px;
 }
@@ -356,6 +361,7 @@ header {
   margin-bottom: 0px;
   background-color: white;
   border:none;
+  position: relative;
   &.panel-wide {
     .panel-body { padding: 8px; }
     .panel-heading { padding: 8px; }
@@ -622,8 +628,8 @@ header {
 
   table.depths-table {
     th, td { text-align: right; width: 90px; min-width: 90px; }
-    th { color: #888; }
-    td { color: #eee; }
+    th { color: #333; }
+    td { color: #666; }
   }
 }
 
@@ -638,18 +644,18 @@ header {
 }
 
 #market_trades {
-  height: $market-trades-height;
-  min-height: $market-trades-height;
+  // height: $market-trades-height;
+  // min-height: $market-trades-height;
   z-index: 999;
 
   .panel {
-    height: $market-trades-height;
-    min-height: $market-trades-height;
+    // height: $market-trades-height;
+    // min-height: $market-trades-height;
     padding: 12px;
   }
-  .panel-body-content {
-    min-height: $market-trades-height - $panel_table_header_high;
-  }
+  // .panel-body-content {
+    // min-height: $market-trades-height - $panel_table_header_high;
+  // }
 
   table {
     .new {
@@ -706,6 +712,7 @@ header {
 }
 
 #my_orders_wrapper {
+  margin-bottom: 10px;
   .dropdown-wrapper {
     position: absolute;
     height: $my-orders-height;
@@ -882,7 +889,12 @@ table {
     cursor: default; 
     // th { color: #777; }
   }
-  &.table-hover { tbody > tr:hover { cursor: pointer;} }
+  &.table-hover { tbody > tr:hover { cursor: pointer; background-color: #fff;} }
+}
+
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #fff;
 }
 
 .panel-body-content::-webkit-scrollbar { width: 0 !important }
