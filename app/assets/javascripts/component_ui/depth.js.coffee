@@ -14,7 +14,7 @@
       chart:
         margin: 0
         height: 100
-        backgroundColor: 'rgba(0,0,0,0)'
+        backgroundColor: '#ffffff'
 
       title:
         text: ''

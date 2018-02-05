@@ -1,16 +1,32 @@
 header.text-center
-  .container
-    #getstart.row
-      - unless current_user
-        .col-xs-4.col-xs-offset-8
-          a href="#{signin_path}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.signin")
-        - if ENV['WEIBO_AUTH'] == "true"
-          .col-xs-4
-            a href="/auth/weibo" class="btn btn-primary btn-lg btn-block" role="button" = t("header.login_via_weibo")
-        .col-xs-4
-          a href="#{signup_path}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.signup")
-      - else
-        .col-xs-6.col-xs-offset-9.text-center
-          a href="#{market_path(current_market)}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.getstart")
-          a href="#{funds_path}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.funds")
-          a href="#{settings_path}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.settings")
+  .front-bg
+    img(src='/txt.png')
+    - unless current_user
+      a href="#{signin_path}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.signin")
+      a href="#{signup_path}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.signup")
+    - else
+      a href="#{market_path(current_market)}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.getstart")
+      a href="#{funds_path}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.funds")
+      a href="#{settings_path}" class="btn btn-primary btn-lg btn-block" role="button" = t("header.settings")
+.features
+  .feature-wrapper
+    .block
+      img(src='/icon_intro_market.png')
+      h1 实时行情
+      .desc 专线直连交易所<br>实时行情、财务数据
+    .block
+      img(src='/icon_intro_trade.png')
+      h1 极速交易
+      .desc 闪电下单毫秒成交<br>交易状态实时提醒
+    .block
+      img(src='/icon_intro_safety.png')
+      h1 实时行情
+      .desc 账户资金银行托管<br>数据传输多层加密
+    .block
+      img(src='/icon_intro_fun.png')
+      h1 实时行情
+      .desc 约定交割日期<br>锁定挖矿收益
+    .block
+      img(src='/icon_intro_talks.png')
+      h1 实时行情
+      .desc 币圈高手云集<br>与同道中人交流心得

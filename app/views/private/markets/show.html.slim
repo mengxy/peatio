@@ -3,6 +3,7 @@ html lang="en"
   head
     link href="/favicon.ico" rel="shortcut icon"
     = include_gon
+    = stylesheet_link_tag "application", :media => "all"
     = stylesheet_link_tag 'market', media: "all"
     = javascript_include_tag "market"
     = javascript_include_tag "locales/#{I18n.locale}"
@@ -16,28 +17,36 @@ html lang="en"
 
     audio preload='preload' id='warning-fx'
       source src="/sounds/warning.mp3"
+    - if content_for?(:header)
+      = yield(:header)
+    - else
+      = render 'shared/header'
 
-    = render partial: "private/markets/header"
     #wrap
       .content
-        = render partial: 'market_trades'
-        = render partial: 'market_list'
+        = render partial: "private/markets/header"
+        .left
+          .charts
+            = render partial: 'candlestick'
+            = render partial: 'range_switch'
+            = render partial: 'indicator_switch'
+          .orders
+            = render partial: 'bid_entry', locals: {market: @market, order: @order_bid }
+            = render partial: 'ask_entry', locals: {market: @market, order: @order_ask }
+          = render partial: 'my_orders'
+        .right
+          = render partial: 'market_list'
+          = render partial: 'market_trades'
 
-        = render partial: 'candlestick'
-        = render partial: 'range_switch'
-        = render partial: 'indicator_switch'
+          = render partial: 'order_book'
+          = render partial: 'depths'
+          / = render partial: 'ticker'
 
-        - if ENV['CHAT_FEATURE']
-          #chat_tabs_wrapper.float
-            ul.nav.nav-tabs.tabs-right.sideways
-              li: a href='#chat_content' data-toggle='tab' = t('.chat')
-            .tab-content
-              #chat_content.tab-pane
-                = render partial: 'chat'
+        / - if ENV['CHAT_FEATURE']
+        /   #chat_tabs_wrapper.float
+        /     ul.nav.nav-tabs.tabs-right.sideways
+        /       li: a href='#chat_content' data-toggle='tab' = t('.chat')
+        /     .tab-content
+        /       #chat_content.tab-pane
+        /         = render partial: 'chat'
 
-        = render partial: 'order_book'
-        = render partial: 'depths'
-        = render partial: 'ticker'
-        = render partial: 'ask_entry', locals: {market: @market, order: @order_ask }
-        = render partial: 'bid_entry', locals: {market: @market, order: @order_bid }
-        = render partial: 'my_orders'
