@@ -36,7 +36,7 @@ $ ->
 
   BigNumber.config(ERRORS: false)
 
-  HeaderUI.attachTo('header')
+  HeaderUI.attachTo('.top-price')
   AccountSummaryUI.attachTo('#account_summary')
 
   FloatUI.attachTo('.float')

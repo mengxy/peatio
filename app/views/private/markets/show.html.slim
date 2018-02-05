@@ -34,12 +34,14 @@ html lang="en"
             = render partial: 'bid_entry', locals: {market: @market, order: @order_bid }
             = render partial: 'ask_entry', locals: {market: @market, order: @order_ask }
           = render partial: 'my_orders'
+
+          = render partial: 'order_book'
+          = render partial: 'depths'
+
         .right
           = render partial: 'market_list'
           = render partial: 'market_trades'
 
-          = render partial: 'order_book'
-          = render partial: 'depths'
           / = render partial: 'ticker'
 
         / - if ENV['CHAT_FEATURE']
