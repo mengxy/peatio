@@ -41,14 +41,7 @@ html lang="en"
         .right
           = render partial: 'market_list'
           = render partial: 'market_trades'
-
-          / = render partial: 'ticker'
-
-        / - if ENV['CHAT_FEATURE']
-        /   #chat_tabs_wrapper.float
-        /     ul.nav.nav-tabs.tabs-right.sideways
-        /       li: a href='#chat_content' data-toggle='tab' = t('.chat')
-        /     .tab-content
-        /       #chat_content.tab-pane
-        /         = render partial: 'chat'
-
+    - if content_for?(:footer)
+      = yield(:footer)
+    - else
+      = render 'shared/footer'
