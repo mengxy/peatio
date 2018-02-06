@@ -92,7 +92,7 @@ body {
 
 
 
-.top-price {
+.top-price, header {
   box-sizing: border-box;
   
   .market-name {
@@ -117,6 +117,13 @@ body {
   span[data-title]:before {
     content: attr(data-title);
     display: block;
+  }
+
+  .navbar-right {
+    span[data-title]:before {
+      content: attr(data-title);
+      display: inline;
+    }
   }
 
   span.vol, span.high, span.low {
@@ -162,7 +169,7 @@ body {
 
   li.dropdown {
     a:hover {
-      color: white;
+      color: #333;
       text-decoration: none;
       background: none;
       text-shadow: white 0 0 2px;
@@ -178,7 +185,7 @@ body {
       td {
         vertical-align: middle;
         border-top: none;
-        border-bottom: 1px solid $navbar-default-spliter;
+        border-bottom: 1px solid #f2f2f2;
       }
     }
   }
@@ -187,10 +194,10 @@ body {
     min-width: 0;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    background-color: $panel-bg;
-    border: 1px solid $panel-default-border;
+    background-color: #fff;
+    border: 1px solid #fff;
     box-shadow: 0px 0px 8px $panel-default-border;
-
+    color: #333;
     li:first-child {
       padding-top: 8px;
     }
@@ -234,8 +241,8 @@ body {
       @include header-dropdown;
     }
     table {
-      min-width: 280px;
-      td.account-symbol { img { max-height: 32px; } }
+      min-width: 200px;
+      td.account-symbol { img { max-height: 50px; } }
       span.locked { color: #777; }
     }
     p { margin: 8px; }
@@ -821,7 +828,7 @@ body {
 
   #account_summary {
     table {
-      min-width: 260px;
+      min-width: 200px;
     }
   }
 }
