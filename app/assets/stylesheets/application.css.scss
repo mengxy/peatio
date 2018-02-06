@@ -103,7 +103,7 @@ html, body {
 #wrap {
   height: auto !important;
   min-height: 100%;
-  margin: 0 auto 0 - $footer-height;
+  margin: 0 auto 20px;
 
   & + iframe { display: none; }
 

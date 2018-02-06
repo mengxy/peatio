@@ -64,14 +64,34 @@ body {
   }
 }
 
-header {
+
+
+.top-price {
   box-sizing: border-box;
-  bottom-border: 0px;
+  
+  .market-name {
+    float: left;
+    line-height: 70px;
+    font-size: 24px;
+  }
+
+  .navbar-text {
+    margin: 15px 20px 15px 40px;
+    
+    span {
+      display: block;
+      float: left;
+    }
+  }
+
 
   p + p { margin-left: 20px !important; }
-  span + span { margin-left: 10px !important; }
+  span + span { margin-left: 40px !important; }
 
-  span[data-title]:before { content: attr(data-title) ": "; }
+  span[data-title]:before {
+    content: attr(data-title);
+    display: block;
+  }
 
   span.vol, span.high, span.low {
     font-family: $font-family-monospace;
