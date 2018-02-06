@@ -38,7 +38,7 @@ RANGE_DEFAULT =
 COLOR_ON =
   candlestick:
     color: '#990f0f'
-    upColor: '#000000'
+    upColor: 'rgba(25,255,25,0.5)'
     lineColor: '#cc1414'
     upLineColor: '#49c043'
   close:
@@ -189,7 +189,7 @@ INDICATOR = {MA: false, EMA: false}
           turboThreshold: 0
           followPointer: true
           color: '#990f0f'
-          upColor: '#000000'
+          upColor: 'rgba(0, 255, 0, 0.5)'
           lineColor: '#cc1414'
           upLineColor: '#49c043'
           dataGrouping: dataGrouping

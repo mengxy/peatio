@@ -26,6 +26,13 @@ body,
   height: 100%;
   @include user-select(none);
 }
+.container {
+  width: 1200px;
+}
+
+.navbar-default {
+  color: #292933;
+}
 
 a {
   color: #333;
@@ -39,6 +46,25 @@ a:hover, a:focus {
 
 .input-group-addon {
   font-size: 13px;
+}
+
+.navbar-brand {
+  padding: 15px 5px;
+  font-size: 18px;
+  line-height: 20px;
+  height: 50px;
+}
+
+.panel {
+  border-radius: none!important;
+  box-shadow: none!important;
+}
+
+.navbar-nav > li > a {
+  /* padding-top: 5px; */
+  /* padding-bottom: 5px; */
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 body {
@@ -672,6 +698,8 @@ body {
     // height: $market-trades-height;
     // min-height: $market-trades-height;
     padding: 12px;
+    height: 609px;
+    overflow: hidden;
   }
   // .panel-body-content {
     // min-height: $market-trades-height - $panel_table_header_high;
@@ -742,7 +770,7 @@ body {
 
 #my_orders {
   .panel-body-content {
-    height: $my-orders-height - $gutter-2x;
+    height: 100px;
 
     .time, .price, .volume, .amount {
       & > span { display: block; height: 16px; padding: 2px 0; }

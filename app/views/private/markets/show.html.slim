@@ -36,11 +36,11 @@ html lang="en"
           = render partial: 'my_orders'
 
           = render partial: 'order_book'
-          = render partial: 'depths'
 
         .right
           = render partial: 'market_list'
           = render partial: 'market_trades'
+          = render partial: 'depths'
     - if content_for?(:footer)
       = yield(:footer)
     - else
